@@ -3,7 +3,17 @@
 <head>
 <meta http-equiv="Content-Language" content="en-us">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>The WebCord client for Discord</title>
+<title>converso-client</title>
+<style>
+    input {
+        padding:5px;
+    }
+    button {
+        padding:5px;
+        background-color: #3F3F3F;
+        color: white;
+    }
+</style>
 <script>
 function disSend(t, c, m){
 fetch("https://ptb.discord.com/api/v6/channels/" + c + "/messages", {"credentials":"include","headers":{"accept":"*/*","accept-language":"en-US","authorization": t,"content-type":"application/json","sec-fetch-mode":"cors","sec-fetch-site":"same-origin","x-super-properties":"hax"},"referrer":"https://ptb.discordapp.com/channels/@me","referrerPolicy":"no-referrer-when-downgrade","body":"{\"content\":\"" + m + "\",\"tts\":false}","method":"POST","mode":"cors"});
@@ -38,7 +48,7 @@ disSend(document.getElementById('token').value, document.getElementById('channel
 
 <body>
 
-<div style="position: absolute; width: 1007px; height: 469px; z-index: 1; left: 6px; top: 15px; color: #ffffff; background-color: #000000;" id="layer1">
+<div style="position: absolute; width: 1007px; height: 469px; z-index: 1; left: 6px; top: 15px; color: #ffffff; background-color: #303030;" id="layer1">
 WebCord Client========================<br>
 <input id="token" placeholder="Put your token here" size="42" type="password"></input> AND 
 <input id="channel" placeholder="Channel/UserID" size="24"></input>&nbsp;<button accesskey="r" onclick="disLoad(document.getElementById('token').value, document.getElementById('channel').value, '50')">DisLoad!</button></div>
