@@ -7,11 +7,14 @@
 <style>
     input {
         padding:5px;
+        border-radius:11px;
     }
     button {
         padding:5px;
         background-color: #3F3F3F;
         color: white;
+        border:none;
+        border-radius:12px;
     }
 </style>
 <script>
@@ -48,7 +51,7 @@ disSend(document.getElementById('token').value, document.getElementById('channel
 
 <body>
 
-<div style="position: absolute; width: 1007px; height: 469px; z-index: 1; left: 6px; top: 15px; color: #ffffff; background-color: #303030;" id="layer1">
+<div style="position: absolute; width: 1007px; height: 469px; z-index: 1; left: 6px; top: 15px; color: #ffffff; background-color: #303030; padding:6px;" id="layer1">
 WebCord Client========================<br>
 <input id="token" placeholder="Put your token here" size="42" type="password"></input> AND 
 <input id="channel" placeholder="Channel/UserID" size="24"></input>&nbsp;<button accesskey="r" onclick="disLoad(document.getElementById('token').value, document.getElementById('channel').value, '50')">DisLoad!</button></div>
