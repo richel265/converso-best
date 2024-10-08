@@ -16,7 +16,7 @@
     }
     input {
         padding:5px;
-        border-radius:6px;
+        border-radius:8px;
         background-color: #424242;
         color:#f1f1f1;
         border:none;
@@ -27,10 +27,10 @@
         background-color: #3F3F3F;
         color: white;
         border:none;
-        border-radius:6px;
+        border-radius:8px;
     }
     div {
-        border-radius: 6px !important;
+        border-radius: 8px !important;
     }
 </style>
 <script>
@@ -67,15 +67,15 @@ disSend(document.getElementById('token').value, document.getElementById('channel
 
 <body>
 
-<div style="position: absolute; width: 1007px; height: 469px; z-index: 1; left: 0px; top: 0px; color: #ffffff; background-color: #303030; padding:12px; border-radius: 14px;" id="layer1">
+<div style="position: absolute; width: 1007px; height: 469px; z-index: 1; left: 0px; top: 0px; color: #ffffff; background-color: #303030; padding:8px; border-radius: 14px;" id="layer1">
 <span style="height:100%"><img id="logo" src="./res/logo.png" style="height:33px;"></span><br>
 <input id="token" placeholder="Token" size="42" type="password"></input>
 <input id="channel" placeholder="Channel/UserID" size="24"></input>&nbsp;<button accesskey="r" onclick="disLoad(document.getElementById('token').value, document.getElementById('channel').value, '50')">Load messages</button></div>
 
-<div style="position:absolute;width: 975px; height: 350px; z-index: 2; left: 12px; top: 68px; color: #f1f1f1; background-color: #4b4b4b; padding: 6px; overflow-y: scroll; overflow-x: scroll; font-size: 12px;" id="messages">
+<div style="position:absolute;width: 975px; height: 350px; z-index: 2; left: 8px; top: 88px; color: #f1f1f1; background-color: #4b4b4b; padding: 6px; overflow-y: scroll; overflow-x: scroll; font-size: 12px;" id="messages">
 <b>undefined</b> this is what your messages will look like</div>
 
-<div style="position:absolute;width: 975px; height: 38px; z-index: 3; left: 12px; top: 432px" id="layer2">
+<div style="position:absolute;width: 975px; height: 38px; z-index: 3; left: 8px; top: 432px" id="layer2">
 <input id="mess" placeholder="Send message to Undefined" onkeypress="keyD(event)" size="130"></input>&nbsp;<button onclick="disSend(document.getElementById('token').value, document.getElementById('channel').value, document.getElementById('mess').value)">Send</button>
 &nbsp;</div>
 
