@@ -1,10 +1,16 @@
 <html>
 
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <meta http-equiv="Content-Language" content="en-us">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <title>converso-client</title>
 <style>
+    *{
+        font-family:"Inter";
+    }
     body{
         margin:0px;
     }
@@ -12,7 +18,8 @@
         padding:5px;
         border-radius:6px;
         background-color: #424242;
-        color:#f1f1f1
+        color:#f1f1f1;
+        border:none;
         
     }
     button {
@@ -20,7 +27,10 @@
         background-color: #3F3F3F;
         color: white;
         border:none;
-        border-radius:7px;
+        border-radius:6px;
+    }
+    div {
+        border-radius: 6px !important;
     }
 </style>
 <script>
@@ -58,8 +68,8 @@ disSend(document.getElementById('token').value, document.getElementById('channel
 <body>
 
 <div style="position: absolute; width: 1007px; height: 469px; z-index: 1; left: 0px; top: 0px; color: #ffffff; background-color: #303030; padding:12px; border-radius: 14px;" id="layer1">
-<span style="height:100%"><img id="logo" src="./res/logo.png" style="height:33px;"></span><br>
-<input id="token" placeholder="Put your token here" size="42" type="password"></input> AND 
+<span style="height:100%"><img id="logo" src="./res/logo.png" style="height:33px;width:100%"></span><br>
+<input id="token" placeholder="Token" size="42" type="password"></input>
 <input id="channel" placeholder="Channel/UserID" size="24"></input>&nbsp;<button accesskey="r" onclick="disLoad(document.getElementById('token').value, document.getElementById('channel').value, '50')">Load messages</button></div>
 
 <div style="position:absolute;width: 975px; height: 350px; z-index: 2; left: 12px; top: 68px; color: #f1f1f1; background-color: #4b4b4b; padding: 6px; overflow-y: scroll; overflow-x: scroll; font-size: 12px;" id="messages">
